@@ -26,6 +26,9 @@ img {
 /* style */
 body {
   background: #eeeeee;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 1px;
 }
 .globalHeader {
   margin: 20px;

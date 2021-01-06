@@ -26,6 +26,9 @@ img {
 /* style */
 body {
   background: #eeeeee;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 1px;
 }
 .globalHeader {
   margin: 20px;
@@ -156,4 +159,4 @@ body {
 }
 
 
-/*# sourceMappingURL=style.d99fcd2a.css.map */
+/*# sourceMappingURL=style.682f5dc0.css.map */
