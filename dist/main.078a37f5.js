@@ -123,13 +123,17 @@ var $lastLi = $siteList.find("li.last");
 var x = localStorage.getItem("x");
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
-  logo: "A",
+  logo: "D",
   logoType: "text",
-  url: "http://acfun.cn"
+  url: "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript"
 }, {
-  logo: "B",
-  logoType: "image",
-  url: "https://www.bilibili.com"
+  logo: "J",
+  logoType: "text",
+  url: "https://www.jquery123.com/"
+}, {
+  logo: "R",
+  logoType: "text",
+  url: "http://www.ruanyifeng.com/blog/archives.html"
 }];
 
 var simplifyUrl = function simplifyUrl(url) {
@@ -156,7 +160,7 @@ var render = function render() {
 
 render();
 $(".addButton").on("click", function () {
-  var url = window.prompt("请问你要添加的网址是啥？");
+  var url = window.prompt("请输入你要添加的网址");
 
   if (url.indexOf("http") !== 0) {
     url = "https://" + url;
@@ -187,4 +191,4 @@ $(document).on("keypress", function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.5d5d6f4e.js.map
+//# sourceMappingURL=main.078a37f5.js.map

@@ -24,11 +24,22 @@ img {
 }
 
 /* style */
+html {
+  height: 100%;
+}
 body {
   background: #eeeeee;
-  min-width: 100vw;
-  min-height: 100vh;
-  padding: 1px;
+  background-image: url(./images/mobileBack.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+@media (min-width: 500px) {
+  body {
+    background-image: url(./images/background.jpeg);
+  }
 }
 .globalHeader {
   margin: 20px;

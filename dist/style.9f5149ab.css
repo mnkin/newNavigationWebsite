@@ -24,11 +24,22 @@ img {
 }
 
 /* style */
+html {
+  height: 100%;
+}
 body {
   background: #eeeeee;
-  min-width: 100vw;
-  min-height: 100vh;
-  padding: 1px;
+  background-image: url(mobileBack.9661df7f.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+@media (min-width: 500px) {
+  body {
+    background-image: url(background.eb8d0c75.jpeg);
+  }
 }
 .globalHeader {
   margin: 20px;
@@ -159,4 +170,4 @@ body {
 }
 
 
-/*# sourceMappingURL=style.682f5dc0.css.map */
+/*# sourceMappingURL=style.9f5149ab.css.map */

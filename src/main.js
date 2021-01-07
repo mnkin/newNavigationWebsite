@@ -3,8 +3,17 @@ const $lastLi = $siteList.find("li.last");
 const x = localStorage.getItem("x");
 const xObject = JSON.parse(x);
 const hashMap = xObject || [
-  { logo: "A", logoType: "text", url: "http://acfun.cn" },
-  { logo: "B", logoType: "image", url: "https://www.bilibili.com" },
+  {
+    logo: "D",
+    logoType: "text",
+    url: "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
+  },
+  { logo: "J", logoType: "text", url: "https://www.jquery123.com/" },
+  {
+    logo: "R",
+    logoType: "text",
+    url: "http://www.ruanyifeng.com/blog/archives.html",
+  },
 ];
 
 const simplifyUrl = (url) => {
@@ -44,7 +53,7 @@ const render = () => {
 render();
 
 $(".addButton").on("click", () => {
-  let url = window.prompt("请问你要添加的网址是啥？");
+  let url = window.prompt("请输入你要添加的网址");
   if (url.indexOf("http") !== 0) {
     url = "https://" + url;
   }
