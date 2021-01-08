@@ -181,7 +181,7 @@ window.onbeforeunload = function () {
 };
 
 $(document).on("keypress", function (e) {
-  //const key = e
+  //const key = e.key
   var key = e.key;
 
   for (var i = 0; i < hashMap.length; i++) {
@@ -190,5 +190,8 @@ $(document).on("keypress", function (e) {
     }
   }
 });
+$("input").on("keypress", function (e) {
+  e.stopPropagation();
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.078a37f5.js.map
+//# sourceMappingURL=main.6675e68c.js.map
